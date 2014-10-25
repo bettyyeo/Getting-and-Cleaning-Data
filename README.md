@@ -6,14 +6,10 @@ The data linked to from the course WEBSITE represent data collected from the acc
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-Here are the data for the project: 
-
+The data of the studies inclusive of the elaboration of the studies could be found in the following website
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
- You should CREATE one R script called run_analysis.R that does the following. 
-Merges THE TRAINING and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement. 
-Uses descriptive activity names to name the activities in the data set
-Appropriately LABELS the data set with descriptive variable names. 
-From the data set in step 4, CREATES a second, independent tidy data set with the average of each variable for each activity and each subject.
+The requirement is to write R-script r_analysis.R to makes sense of the file by cleaning up and merging the records to make it comprehensible. 
+
+A code book is also included that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. 
 
