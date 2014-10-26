@@ -4,8 +4,8 @@ The data is downloaded from
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
+DATASET:
 The dataset includes the following files:
-=========================================
 
 - 'README.txt'
 - 'features_info.txt': Shows information about the variables used on the feature vector.
