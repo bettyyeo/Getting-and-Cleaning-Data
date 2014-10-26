@@ -19,7 +19,7 @@ run_analysis <- function(){
   withSubjectTest <- read.table("test/subject_test.txt")
   withSubjects <- rbind(withSubjectTrain,withSubjectTest)
   names(withSubjects) <- "SubjectID"
-  DataWithSubject <- cbind(withSubjects, extractedData)
+  DataWithSubject <- cbind(extractedData,withSubjects)
   
     ##Uses descriptive activity names 
   ##to name the activities in the data set
@@ -31,11 +31,11 @@ run_analysis <- function(){
   combinedActivity <- rbind(ytrain,ytest)
   names(combinedActivity) <- "ActivityID"
     
-  ## add activities in the data set with the appropriate abel
+  ## 4add activities in the data set with the appropriate abel
   
   combActWithNames <- merge(combinedActivity,activitylabel, by="ActivityID")
   extractedDataWithActivities <- cbind(DataWithSubject,combinedActivity)
-  write.table(extractedDataWithActivities, "extractedDataWithActivities", sep="\t")
+  write.table(extractedDataWithActivities, "extractedDataWithActivities1", sep="\t")
   
   
 }
